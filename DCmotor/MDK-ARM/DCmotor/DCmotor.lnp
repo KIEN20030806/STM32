@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dcmotor\startup_stm32f103xb.o"
+"dcmotor\main.o"
+"dcmotor\stm32f1xx_it.o"
+"dcmotor\stm32f1xx_hal_msp.o"
+"dcmotor\stm32f1xx_hal_gpio_ex.o"
+"dcmotor\stm32f1xx_hal_tim.o"
+"dcmotor\stm32f1xx_hal_tim_ex.o"
+"dcmotor\stm32f1xx_hal.o"
+"dcmotor\stm32f1xx_hal_rcc.o"
+"dcmotor\stm32f1xx_hal_rcc_ex.o"
+"dcmotor\stm32f1xx_hal_gpio.o"
+"dcmotor\stm32f1xx_hal_dma.o"
+"dcmotor\stm32f1xx_hal_cortex.o"
+"dcmotor\stm32f1xx_hal_pwr.o"
+"dcmotor\stm32f1xx_hal_flash.o"
+"dcmotor\stm32f1xx_hal_flash_ex.o"
+"dcmotor\stm32f1xx_hal_exti.o"
+"dcmotor\system_stm32f1xx.o"
+--strict --scatter "DCmotor\DCmotor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DCmotor.map" -o DCmotor\DCmotor.axf

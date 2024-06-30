@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"adcsingle\startup_stm32f103xb.o"
+"adcsingle\main.o"
+"adcsingle\stm32f1xx_it.o"
+"adcsingle\stm32f1xx_hal_msp.o"
+"adcsingle\stm32f1xx_hal_gpio_ex.o"
+"adcsingle\stm32f1xx_hal_adc.o"
+"adcsingle\stm32f1xx_hal_adc_ex.o"
+"adcsingle\stm32f1xx_hal.o"
+"adcsingle\stm32f1xx_hal_rcc.o"
+"adcsingle\stm32f1xx_hal_rcc_ex.o"
+"adcsingle\stm32f1xx_hal_gpio.o"
+"adcsingle\stm32f1xx_hal_dma.o"
+"adcsingle\stm32f1xx_hal_cortex.o"
+"adcsingle\stm32f1xx_hal_pwr.o"
+"adcsingle\stm32f1xx_hal_flash.o"
+"adcsingle\stm32f1xx_hal_flash_ex.o"
+"adcsingle\stm32f1xx_hal_exti.o"
+"adcsingle\stm32f1xx_hal_tim.o"
+"adcsingle\stm32f1xx_hal_tim_ex.o"
+"adcsingle\system_stm32f1xx.o"
+--strict --scatter "ADCSingle\ADCSingle.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADCSingle.map" -o ADCSingle\ADCSingle.axf

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"testmathlab\startup_stm32f103xb.o"
+"testmathlab\main.o"
+"testmathlab\stm32f1xx_it.o"
+"testmathlab\stm32f1xx_hal_msp.o"
+"testmathlab\stm32f1xx_hal_gpio_ex.o"
+"testmathlab\stm32f1xx_hal_tim.o"
+"testmathlab\stm32f1xx_hal_tim_ex.o"
+"testmathlab\stm32f1xx_hal.o"
+"testmathlab\stm32f1xx_hal_rcc.o"
+"testmathlab\stm32f1xx_hal_rcc_ex.o"
+"testmathlab\stm32f1xx_hal_gpio.o"
+"testmathlab\stm32f1xx_hal_dma.o"
+"testmathlab\stm32f1xx_hal_cortex.o"
+"testmathlab\stm32f1xx_hal_pwr.o"
+"testmathlab\stm32f1xx_hal_flash.o"
+"testmathlab\stm32f1xx_hal_flash_ex.o"
+"testmathlab\stm32f1xx_hal_exti.o"
+"testmathlab\system_stm32f1xx.o"
+--strict --scatter "TESTMATHLAB\TESTMATHLAB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TESTMATHLAB.map" -o TESTMATHLAB\TESTMATHLAB.axf

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"timioc\startup_stm32f103xb.o"
+"timioc\main.o"
+"timioc\stm32f1xx_it.o"
+"timioc\stm32f1xx_hal_msp.o"
+"timioc\stm32f1xx_hal_gpio_ex.o"
+"timioc\stm32f1xx_hal_tim.o"
+"timioc\stm32f1xx_hal_tim_ex.o"
+"timioc\stm32f1xx_hal.o"
+"timioc\stm32f1xx_hal_rcc.o"
+"timioc\stm32f1xx_hal_rcc_ex.o"
+"timioc\stm32f1xx_hal_gpio.o"
+"timioc\stm32f1xx_hal_dma.o"
+"timioc\stm32f1xx_hal_cortex.o"
+"timioc\stm32f1xx_hal_pwr.o"
+"timioc\stm32f1xx_hal_flash.o"
+"timioc\stm32f1xx_hal_flash_ex.o"
+"timioc\stm32f1xx_hal_exti.o"
+"timioc\system_stm32f1xx.o"
+--strict --scatter "TIMIOC\TIMIOC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIMIOC.map" -o TIMIOC\TIMIOC.axf

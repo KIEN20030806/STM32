@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"adc2dma\startup_stm32f103xb.o"
+"adc2dma\main.o"
+"adc2dma\stm32f1xx_it.o"
+"adc2dma\stm32f1xx_hal_msp.o"
+"adc2dma\stm32f1xx_hal_gpio_ex.o"
+"adc2dma\stm32f1xx_hal_adc.o"
+"adc2dma\stm32f1xx_hal_adc_ex.o"
+"adc2dma\stm32f1xx_hal.o"
+"adc2dma\stm32f1xx_hal_rcc.o"
+"adc2dma\stm32f1xx_hal_rcc_ex.o"
+"adc2dma\stm32f1xx_hal_gpio.o"
+"adc2dma\stm32f1xx_hal_dma.o"
+"adc2dma\stm32f1xx_hal_cortex.o"
+"adc2dma\stm32f1xx_hal_pwr.o"
+"adc2dma\stm32f1xx_hal_flash.o"
+"adc2dma\stm32f1xx_hal_flash_ex.o"
+"adc2dma\stm32f1xx_hal_exti.o"
+"adc2dma\stm32f1xx_hal_tim.o"
+"adc2dma\stm32f1xx_hal_tim_ex.o"
+"adc2dma\system_stm32f1xx.o"
+--strict --scatter "ADC2DMA\ADC2DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC2DMA.map" -o ADC2DMA\ADC2DMA.axf

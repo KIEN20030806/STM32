@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"3statebuton\startup_stm32f103xb.o"
+"3statebuton\main.o"
+"3statebuton\stm32f1xx_it.o"
+"3statebuton\stm32f1xx_hal_msp.o"
+"3statebuton\stm32f1xx_hal_gpio_ex.o"
+"3statebuton\stm32f1xx_hal_tim.o"
+"3statebuton\stm32f1xx_hal_tim_ex.o"
+"3statebuton\stm32f1xx_hal.o"
+"3statebuton\stm32f1xx_hal_rcc.o"
+"3statebuton\stm32f1xx_hal_rcc_ex.o"
+"3statebuton\stm32f1xx_hal_gpio.o"
+"3statebuton\stm32f1xx_hal_dma.o"
+"3statebuton\stm32f1xx_hal_cortex.o"
+"3statebuton\stm32f1xx_hal_pwr.o"
+"3statebuton\stm32f1xx_hal_flash.o"
+"3statebuton\stm32f1xx_hal_flash_ex.o"
+"3statebuton\stm32f1xx_hal_exti.o"
+"3statebuton\system_stm32f1xx.o"
+--strict --scatter "3StateButon\3StateButon.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3StateButon.map" -o 3StateButon\3StateButon.axf
